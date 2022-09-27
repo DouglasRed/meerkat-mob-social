@@ -35,6 +35,20 @@ const thoughtController = {
         res.status(400).json(err);
       });
   },
+  getThoughtById({ params }, res) {
+    Thought.findOne({ _id: params.thoughtId })
+      .then((dbUserData) => {
+        if (!dbUserData) {
+          res.status(404).json({ message: "No thoughts found" });
+          return;
+        }
+        res.json(dbUserData);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(400).json(err);
+      });
+  },
 
   addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
