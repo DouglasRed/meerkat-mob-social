@@ -40,7 +40,7 @@ const ThoughtSchema = new Schema(
       type: String,
       required: "A username is required to post a thought",
     },
-    // replies: [ReactionSchema]
+    replies: [ReactionSchema],
   },
   {
     toJSON: {

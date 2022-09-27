@@ -17,10 +17,12 @@ const UserSchema = new Schema({
       "Please enter a valid email address",
     ],
   },
-  thoughts: {
-    type: Schema.Types.ObjectId,
-    ref: "Thought",
-  },
+  thoughts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Thought",
+    },
+  ],
   friends: [],
 });
 
