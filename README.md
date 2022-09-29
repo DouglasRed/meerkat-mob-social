@@ -25,7 +25,7 @@ In order to download and use my code, you will have to clone my repo and install
 
 ## Usage
 
-Keep up to date with all of the latest news stories with your friends families and associates. This will allow you to allows be in the "know" in an eventful world.
+Keep up-to-date with all of the latest thoughts from your friends, family members, and associates. This will allow you to interact with everyone and share your thoughts and reactions as well.
 
 ![Alt text](./assets/images/meerkat-mob.jpg)
 
